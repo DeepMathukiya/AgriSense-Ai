@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Camera Capture</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a2e;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #16213e;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            color: #e94560;
+            text-align: center;
+        }
+
+        #controls {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #e94560;
+            border: none;
+            padding: 12px 20px;
+            color: white;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.1s;
+            flex: 1;
+            max-width: 150px;
+        }
+
+        button:hover {
+            background-color: #d63651;
+        }
+
+        button:active {
+            transform: scale(0.98);
+        }
+
+        #video,
+        #canvas {
+            border: 3px solid #0f3460;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        #status {
+            text-align: center;
+            margin-top: 15px;
+            font-style: italic;
+            color: #e94560;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enhanced Camera Capture</h1>
+        <div id="controls">
+            <button id="start-camera">Start Camera</button>
+            <button id="click-photo" class="hidden">Capture</button>
+            <button id="close-camera" class="hidden">Close Camera</button>
+        </div>
+        <video id="video" width="440" height="330" autoplay class="hidden"></video>
+        <canvas id="canvas" width="440" height="330" class="hidden"></canvas>
+        <div id="status"></div>
+    </div>
+    <script>
+        let camera_button = document.querySelector("#start-camera");
+        let close_button = document.querySelector("#close-camera");
+        let video = document.querySelector("#video");
+        let click_button = document.querySelector("#click-photo");
+        let canvas = document.querySelector("#canvas");
+        let status = document.querySelector("#status");
+        let stream;
+
+        function updateStatus(message) {
+            status.textContent = message;
+            setTimeout(() => { status.textContent = ''; }, 3000);
+        }
+
+        camera_button.addEventListener('click', async function () {
+            try {
+                stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+                video.srcObject = stream;
+                video.classList.remove('hidden');
+                camera_button.classList.add('hidden');
+                close_button.classList.remove('hidden');
+                click_button.classList.remove('hidden');
+                updateStatus('Camera started successfully');
+            } catch (error) {
+                console.error('Error accessing the camera:', error);
+                updateStatus('Failed to access the camera');
+            }
+        });
+
+        close_button.addEventListener('click', function () {
+            if (stream) {
+                let tracks = stream.getTracks();
+                tracks.forEach(track => track.stop());
+                video.srcObject = null;
+                video.classList.add('hidden');
+                canvas.classList.add('hidden');
+                camera_button.classList.remove('hidden');
+                close_button.classList.add('hidden');
+                click_button.classList.add('hidden');
+                updateStatus('Camera closed');
+            }
+        });
+
+        click_button.addEventListener('click', function () {
+            canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
+            let image_data_url = canvas.toDataURL('image/jpeg');
+            canvas.classList.remove('hidden');
+
+            // Simulated server request (replace with actual server logic)
+            setTimeout(() => {
+                console.log('Image saved successfully');
+                updateStatus('Image captured and saved');
+            }, 1000);
+
+            // Uncomment and modify as needed for actual server implementation
+            fetch('/save-image', {
+                method: 'POST',
+                body: JSON.stringify({ image: image_data_url }),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => response.json())
+                .then(data => {
+                    console.log('Image saved successfully:', data);
+                    updateStatus('Image captured and saved');
+                })
+                .catch(error => {
+                    console.error('Error saving image:', error);
+                    updateStatus('Failed to save image');
+                });
+        });
+    </script>
+</body>
+
+</html>
