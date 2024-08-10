@@ -2,11 +2,9 @@ from flask import Flask, render_template, request, jsonify
 import os
 import base64
 from keras.models import load_model
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.preprocessing import image
 import numpy as np
-import cv2
-
-
+import tensorflow as tf
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -76,14 +74,13 @@ def save_image():
     model = load_model("model.h5")
 
     # Preprocess the image
-    img_ = cv2.imread(image_path, cv2.IMREAD_ANYCOLOR)
-    img_ = cv2.resize(img_, (256, 256))
-    img_array = img_to_array(img_)
-    img_array = np.expand_dims(img_array, axis=0)
-
-    # Make prediction
-    prediction = model.predict(img_array)
-    predicted_class = np.argmax(prediction)
+    img = image.load_img(image_path, target_size=(256,256))
+    img_array = image.img_to_array(img)
+    img_array = img_array.astype("float32") / 255.0 
+    img_array = tf.expand_dims(img_array, 0)
+    predictions = model.predict(img_array)
+    predictions_class = np.argmax(predictions, axis=1)
+    print(predictions_class)
     predicted_class = plant_diseases[predicted_class]
     return jsonify({
         "message": "Image saved successfully",
