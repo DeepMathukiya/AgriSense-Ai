@@ -1,0 +1,775 @@
+{
+    "pest_management": [
+      {
+        "disease_name": "Apple Scab",
+        "pesticides": [
+          {
+            "name": "Captan",
+            "type": "Fungicide",
+            "description": "Captan is effective against apple scab by inhibiting fungal spore germination.",
+            "application_timing": [
+              "Apply during the growing season, especially during leaf and fruit development",
+              "Reapply every 7-10 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Ensure complete coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Apple Black Rot",
+        "pesticides": [
+          {
+            "name": "Mancozeb",
+            "type": "Fungicide",
+            "description": "Mancozeb controls black rot by inhibiting fungal processes.",
+            "application_timing": [
+              "Apply before symptoms appear",
+              "Reapply every 7-14 days during high disease conditions"
+            ],
+            "usage_instructions": [
+              "Mix as directed",
+              "Apply to all plant parts"
+            ],
+            "safety_precautions": [
+              "Wear protective gear",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Apple Cedar Apple Rust",
+        "pesticides": [
+          {
+            "name": "Sulfur",
+            "type": "Fungicide",
+            "description": "Sulfur controls cedar apple rust by affecting fungal growth.",
+            "application_timing": [
+              "Apply during early infection stages",
+              "Reapply every 10-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per instructions",
+              "Apply evenly"
+            ],
+            "safety_precautions": [
+              "Avoid hot, sunny conditions",
+              "Wear protective clothing"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Blueberry Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil helps maintain blueberry health by controlling pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Cherry (Including Sour) Powdery Mildew",
+        "pesticides": [
+          {
+            "name": "Sulfur",
+            "type": "Fungicide",
+            "description": "Sulfur controls powdery mildew on cherries by inhibiting fungal growth.",
+            "application_timing": [
+              "Apply at first signs of mildew",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Mix according to label",
+              "Apply thoroughly"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid applying in hot conditions"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Cherry (Including Sour) Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil supports cherry tree health by controlling pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Corn (Maize) Cercospora Leaf Spot",
+        "pesticides": [
+          {
+            "name": "Mancozeb",
+            "type": "Fungicide",
+            "description": "Mancozeb controls Cercospora leaf spot by preventing fungal growth.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 7-10 days"
+            ],
+            "usage_instructions": [
+              "Mix according to label",
+              "Apply to all affected areas"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Corn (Maize) Common Rust",
+        "pesticides": [
+          {
+            "name": "Azoxystrobin",
+            "type": "Fungicide",
+            "description": "Azoxystrobin controls common rust by inhibiting fungal respiration.",
+            "application_timing": [
+              "Apply at early infection stages",
+              "Reapply every 14-21 days"
+            ],
+            "usage_instructions": [
+              "Follow label instructions",
+              "Ensure thorough coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective gear",
+              "Use in a well-ventilated area"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Corn (Maize) Northern Leaf Blight",
+        "pesticides": [
+          {
+            "name": "Propiconazole",
+            "type": "Fungicide",
+            "description": "Propiconazole manages northern leaf blight by inhibiting fungal cell wall synthesis.",
+            "application_timing": [
+              "Apply at first signs of blight",
+              "Reapply every 14-21 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant parts"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Corn (Maize) Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil supports overall corn health by managing pests and diseases.",
+            "application_timing": [
+              "Apply throughout the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Grape Black Rot",
+        "pesticides": [
+          {
+            "name": "Chlorothalonil",
+            "type": "Fungicide",
+            "description": "Chlorothalonil controls black rot on grapes by inhibiting fungal enzyme activity.",
+            "application_timing": [
+              "Apply at early stages of disease",
+              "Reapply every 7-10 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Mix as directed on label",
+              "Ensure thorough coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Grape Esca (Black Measles)",
+        "pesticides": [
+          {
+            "name": "Copper Fungicides",
+            "type": "Fungicide",
+            "description": "Copper fungicides manage Esca by preventing fungal development.",
+            "application_timing": [
+              "Apply before disease symptoms appear",
+              "Reapply every 7-14 days during wet conditions"
+            ],
+            "usage_instructions": [
+              "Mix according to label directions",
+              "Apply to all parts of the plant"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact with skin and eyes"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Grape Leaf Blight (Isariopsis Leaf Spot)",
+        "pesticides": [
+          {
+            "name": "Fentin Hydroxide",
+            "type": "Fungicide",
+            "description": "Fentin hydroxide controls leaf blight by preventing fungal infection.",
+            "application_timing": [
+              "Apply at the first signs of disease",
+              "Reapply every 7-14 days as needed"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Ensure even coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective gear",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Grape Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil supports grape health by managing pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute according to label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Orange Huanglongbing (Citrus Greening)",
+        "pesticides": [
+          {
+            "name": "Copper-based Fungicides",
+            "type": "Fungicide",
+            "description": "Copper fungicides help manage citrus greening by controlling bacterial spread.",
+            "application_timing": [
+              "Apply before symptoms appear",
+              "Reapply every 14-21 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Mix as per label instructions",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid contact with skin and eyes"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Peach Bacterial Spot",
+        "pesticides": [
+          {
+            "name": "Copper Fungicides",
+            "type": "Fungicide",
+            "description": "Copper fungicides manage bacterial spot by preventing the spread of bacteria.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Follow label directions",
+              "Ensure even coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Peach Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil supports peach health by controlling pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Pepper, Bell Bacterial Spot",
+        "pesticides": [
+          {
+            "name": "Copper Fungicides",
+            "type": "Fungicide",
+            "description": "Copper fungicides control bacterial spot by reducing bacterial growth.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Mix according to label",
+              "Ensure thorough coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Pepper, Bell Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil helps maintain pepper health by managing pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Potato Early Blight",
+        "pesticides": [
+          {
+            "name": "Chlorothalonil",
+            "type": "Fungicide",
+            "description": "Chlorothalonil controls early blight by preventing fungal infection.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 7-10 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Mix as directed",
+              "Apply to all affected areas"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Potato Late Blight",
+        "pesticides": [
+          {
+            "name": "Mancozeb",
+            "type": "Fungicide",
+            "description": "Mancozeb controls late blight by inhibiting fungal growth.",
+            "application_timing": [
+              "Apply before symptoms appear",
+              "Reapply every 7-10 days during high disease conditions"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply thoroughly"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Potato Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil supports potato health by controlling pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Raspberry Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil helps maintain raspberry health by managing pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Squash Powdery Mildew",
+        "pesticides": [
+          {
+            "name": "Potassium Bicarbonate",
+            "type": "Fungicide",
+            "description": "Potassium bicarbonate helps control powdery mildew by altering the pH of plant surfaces.",
+            "application_timing": [
+              "Apply at first signs of mildew",
+              "Reapply every 7-10 days during active growth"
+            ],
+            "usage_instructions": [
+              "Mix according to label directions",
+              "Apply thoroughly"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Strawberry Leaf Scorch",
+        "pesticides": [
+          {
+            "name": "Copper Fungicides",
+            "type": "Fungicide",
+            "description": "Copper fungicides control leaf scorch by reducing fungal infection.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 7-10 days during wet conditions"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply evenly"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid contact with skin and eyes"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Strawberry Healthy",
+        "pesticides": [
+          {
+            "name": "Neem Oil",
+            "type": "Organic Fungicide/Insecticide",
+            "description": "Neem oil supports strawberry health by managing pests and diseases.",
+            "application_timing": [
+              "Apply during the growing season",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all plant surfaces"
+            ],
+            "safety_precautions": [
+              "Wear gloves",
+              "Use in well-ventilated areas"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Bacterial Spot",
+        "pesticides": [
+          {
+            "name": "Copper Fungicides",
+            "type": "Fungicide",
+            "description": "Copper fungicides help control bacterial spot by reducing bacterial growth.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 7-14 days"
+            ],
+            "usage_instructions": [
+              "Mix according to label",
+              "Ensure thorough coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Early Blight",
+        "pesticides": [
+          {
+            "name": "Chlorothalonil",
+            "type": "Fungicide",
+            "description": "Chlorothalonil controls early blight by preventing fungal infection.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 7-10 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Mix as directed",
+              "Apply to all affected areas"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Late Blight",
+        "pesticides": [
+          {
+            "name": "Mancozeb",
+            "type": "Fungicide",
+            "description": "Mancozeb manages late blight by inhibiting fungal growth.",
+            "application_timing": [
+              "Apply before symptoms appear",
+              "Reapply every 7-10 days during high disease conditions"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply thoroughly"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Leaf Mold",
+        "pesticides": [
+          {
+            "name": "Potassium Bicarbonate",
+            "type": "Fungicide",
+            "description": "Potassium bicarbonate helps control leaf mold by altering the pH on plant surfaces.",
+            "application_timing": [
+              "Apply at first signs of mold",
+              "Reapply every 7-10 days during active growth"
+            ],
+            "usage_instructions": [
+              "Mix as directed",
+              "Ensure thorough coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Septoria Leaf Spot",
+        "pesticides": [
+          {
+            "name": "Azoxystrobin",
+            "type": "Fungicide",
+            "description": "Azoxystrobin manages septoria leaf spot by inhibiting fungal respiration.",
+            "application_timing": [
+              "Apply at early signs of disease",
+              "Reapply every 14-21 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Apply to all affected areas"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Spider Mites (Two-spotted Spider Mite)",
+        "pesticides": [
+          {
+            "name": "Insecticidal Soap",
+            "type": "Insecticide",
+            "description": "Insecticidal soap controls spider mites by disrupting their cell membranes.",
+            "application_timing": [
+              "Apply when mites are first observed",
+              "Reapply every 7-10 days as needed"
+            ],
+            "usage_instructions": [
+              "Mix according to label directions",
+              "Apply to affected areas"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid direct contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Target Spot",
+        "pesticides": [
+          {
+            "name": "Azoxystrobin",
+            "type": "Fungicide",
+            "description": "Azoxystrobin helps manage target spot by inhibiting fungal respiration.",
+            "application_timing": [
+              "Apply at first signs of disease",
+              "Reapply every 14-21 days during high disease pressure"
+            ],
+            "usage_instructions": [
+              "Dilute as per label",
+              "Ensure thorough coverage"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Yellow Leaf Curl Virus",
+        "pesticides": [
+          {
+            "name": "Imidacloprid",
+            "type": "Insecticide",
+            "description": "Imidacloprid manages yellow leaf curl virus by controlling vector insects.",
+            "application_timing": [
+              "Apply before symptoms of the virus are visible",
+              "Reapply as needed based on pest pressure"
+            ],
+            "usage_instructions": [
+              "Mix according to label",
+              "Apply to affected areas"
+            ],
+            "safety_precautions": [
+              "Wear protective clothing",
+              "Avoid inhalation and skin contact"
+            ]
+          }
+        ]
+      },
+      {
+        "disease_name": "Tomato Mosaic Virus",
+        "pesticides": [
+          {
+            "name": "Preventive Measures",
+            "type": "Cultural Control",
+            "description": "Preventive measures include proper sanitation and control of insect vectors.",
+            "application_timing": [
+              "Maintain cleanliness",
+              "Control insect vectors"
+            ],
+            "usage_instructions": [
+              "Follow best agricultural practices",
+              "Implement integrated pest management strategies"
+            ],
+            "safety_precautions": [
+              "Practice good hygiene",
+              "Avoid transferring virus between plants"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
