@@ -97,7 +97,6 @@
         <canvas id="canvas" width="440" height="330" class="hidden"></canvas>
         <div id="status"></div>
         <div id="pred"></div>
-        <img id="imgs" alt="">
     </div>
     <script>
         let camera_button = document.querySelector("#start-camera");
@@ -106,8 +105,7 @@
         let click_button = document.querySelector("#click-photo");
         let canvas = document.querySelector("#canvas");
         let status = document.querySelector("#status");
-        let pred = document.querySelector("#pred");
-        let imgs = document.querySelector("#imgs");
+        let prediction = document.querySelector("#pred");
         let stream;
 
         function updateStatus(message) {
@@ -159,22 +157,57 @@
             fetch('/save-image', {
                 method: 'POST',
                 body: JSON.stringify({ image: image_data_url }),
-                // body: JSON.stringify({ image: "saved_images/p1.jpg" }),
                 headers: {
                     'Content-Type': 'application/json'
                 }
             }).then(response => response.json())
                 .then(data => {
-                    console.log('Image saved successfully:', data);
+                    // console.log('Image saved successfully:', data);
                     updateStatus(`Image captured and saved. Predicted class: ${data.predicted_class}`);
-                    pred.textContent = data.predicted_class;
-                    imgs.src = data.image_path;
+                    // imgs.src = data.image_path;
+                    res = output(data.predicted_class)
+                    // pred.textContent = res.pesticides;
+                    // console.log(res)
+
                 })
                 .catch(error => {
-                    console.error('Error saving image:', error);
+                    console.log('Error saving image:', error.message);
                     updateStatus('Failed to save image');
                 });
         });
+
+        output = async (pred) => {
+            try {
+                const response = await fetch("/pesticides");
+                const data = await response.json();
+                console.log(data.pest_management[pred]?.disease_name);
+                console.log(data.pest_management[pred]?.pesticides[0].name);
+                console.log(data.pest_management[pred]?.pesticides[0].type);
+                console.log(data.pest_management[pred]?.pesticides[0].description);
+                console.log(data.pest_management[pred]?.pesticides[0].application_timing);
+                console.log(data.pest_management[pred]?.pesticides[0].usage_instructions);
+                console.log(data.pest_management[pred]?.pesticides[0].safety_precautions);
+                prediction.innerHTML = `
+                <p>${data.pest_management[pred]?.disease_name}</p>
+                <p>${data.pest_management[pred]?.pesticides[0].name}</p>
+                <p>${data.pest_management[pred]?.pesticides[0].type}</p>
+                <p>${data.pest_management[pred]?.pesticides[0].description}</p>
+                <span>application_timing:</span>
+                <p>1.${data.pest_management[pred]?.pesticides[0].application_timing[0]}</p>
+                <p>2.${data.pest_management[pred]?.pesticides[0].application_timing[1]}</p>
+                <span>usage_instructions:</span>
+                <p>1.${data.pest_management[pred]?.pesticides[0].usage_instructions[0]}</p>
+                <p>2.${data.pest_management[pred]?.pesticides[0].usage_instructions[1]}</p>
+                <span>safety_precautions:</span>
+                <p>1.${data.pest_management[pred]?.pesticides[0].safety_precautions[0]}</p>
+                <p>2.${data.pest_management[pred]?.pesticides[0].safety_precautions[1]}</p>
+                `
+                // Process the data and display relevant information
+            } catch (error) {
+                console.error("Error fetching pesticides data:", error);
+                // Handle error gracefully
+            }
+        };
     </script>
 </body>
 

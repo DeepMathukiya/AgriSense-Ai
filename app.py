@@ -5,6 +5,7 @@ from keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import numpy as np
 import tensorflow as tf
+import json
 
 app = Flask(__name__, static_url_path='/static')
 
@@ -15,6 +16,18 @@ if not os.path.exists('saved_images'):
 @app.route('/')
 def hello_world():
     return render_template('index.html')
+@app.route('/pesticides')
+
+def get_pesticides():
+
+
+# Opening JSON file
+    f = open('pesticides.json')
+
+# returns JSON object as 
+# a dictionary
+    pesticides_data = json.load(f) # Replace with your data loading logic
+    return jsonify(pesticides_data)
 
 @app.route('/save-image', methods=['POST'])
 def save_image():
@@ -24,7 +37,7 @@ def save_image():
     "Apple - Apple Scab",
     "Apple - Black Rot",
     "Apple - Cedar Apple Rust",
-    "Apple - Healthy",
+    "Apple - Healthy 88",
     "Blueberry - Healthy",
     "Cherry (including sour) - Powdery Mildew",
     "Cherry (including sour) - Healthy",
@@ -45,7 +58,7 @@ def save_image():
     "Potato - Late Blight",
     "Potato - Healthy",
     "Raspberry - Healthy",
-    "Soybean - Healthy",
+    "Soybean - Healthy 88",
     "Squash - Powdery Mildew",
     "Strawberry - Leaf Scorch",
     "Strawberry - Healthy",
@@ -58,7 +71,7 @@ def save_image():
     "Tomato - Target Spot",
     "Tomato - Tomato Yellow Leaf Curl Virus",
     "Tomato - Tomato Mosaic Virus",
-    "Tomato - Healthy"
+    "Tomato - Healthy 88"
 ]
 
     # Decode the image data
@@ -80,12 +93,13 @@ def save_image():
     img_array = tf.expand_dims(img_array, 0)
     predictions = model.predict(img_array)
     predictions_class = np.argmax(predictions, axis=1)
-    print(predictions_class)
-    predicted_class = plant_diseases[predicted_class]
+    print(predictions_class[0])
+    predicted_class = plant_diseases[predictions_class[0]]
+    # predicted_class = predictions_class[0]
     return jsonify({
         "message": "Image saved successfully",
         "image_path": image_path,
-        "predicted_class": (predicted_class)
+        "predicted_class": int(predictions_class[0])
     })   
 
 if __name__ == '__main__':

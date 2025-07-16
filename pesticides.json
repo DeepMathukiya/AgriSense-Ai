@@ -66,6 +66,7 @@
           }
         ]
       },
+      {"disease_name": "Apple - Healthy"},
       {
         "disease_name": "Blueberry Healthy",
         "pesticides": [
@@ -507,6 +508,9 @@
         ]
       },
       {
+        "disease_name": "Soybean - Healthy"
+      },
+      {
         "disease_name": "Squash Powdery Mildew",
         "pesticides": [
           {
@@ -769,6 +773,8 @@
             ]
           }
         ]
+      },{
+        "disease_name": "Tomato - Healthy"
       }
     ]
   }
