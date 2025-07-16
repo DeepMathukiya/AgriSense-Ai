@@ -2,7 +2,7 @@
 
 ## Demo Video
 
-<img src="p1.jpg" alt="Demo" width=auto></img>
+<img src="[p1.jpg](https://imgur.com/6jkSHxl.gif)" alt="Demo" width=auto></img>
 
 
 
