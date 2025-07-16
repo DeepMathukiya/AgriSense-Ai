@@ -1,9 +1,5 @@
 # AgriSense AI – Smart Agriculture Assistant
 
-## Demo Video
-
-<img src="https://imgur.com/6jkSHxl.gif" alt="Demo" width=auto></img>
-
 
 
 ## Overview
@@ -25,6 +21,13 @@ The system includes a **CNN-based model** for disease prediction and an **AR fea
 - **Mobile App Development**: Flutter for cross-platform mobile app (iOS & Android).
 - **Image Processing**: OpenCV for image preprocessing and augmentation.
 - **Cloud**: AWS/GCP for cloud deployment and storage.
+
+
+## Demo Video
+
+<img src="https://imgur.com/6jkSHxl.gif" alt="Demo" width=auto></img>
+
+
 
 ## Installation
 
