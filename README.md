@@ -23,15 +23,18 @@ The system includes a **CNN-based model** for disease prediction and an **AR fea
 - **Cloud**: AWS/GCP for cloud deployment and storage.
 
 
-## Demo Video
-
-<img src="https://imgur.com/6jkSHxl.gif" alt="Demo" width=auto></img>
-
-
-
 ## Installation
 
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/DeepMathukiya/AgriSense-Ai.git
 cd AgriSense
+```
+
+
+## Demo Video
+
+<img src="https://imgur.com/6jkSHxl.gif" alt="Demo" width=auto></img>
+
+
+
