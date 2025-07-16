@@ -30,9 +30,15 @@ The system includes a **CNN-based model** for disease prediction and an **AR fea
 git clone https://github.com/DeepMathukiya/AgriSense-Ai.git
 cd AgriSense
 ```
-
-
-## Demo Video
+### 2. instal dependencies
+```bash 
+pip install -r requirement.txt
+```
+### 3. Run code 
+```bash 
+python app.py
+```
+## Demo Video with AR
 
 <img src="https://imgur.com/6jkSHxl.gif" alt="Demo" width=auto></img>
 
