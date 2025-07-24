@@ -40,7 +40,7 @@ python app.py
 ```
 ## Demo Video with AR
 
-<img src="https://imgur.com/6jkSHxl.gif" alt="Demo" width=auto></img>
+<img src="demo.gif" alt="Demo" width=auto></img>
 
 
 
